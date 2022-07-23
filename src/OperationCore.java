@@ -3,41 +3,33 @@ import java.util.Scanner;
 
 public class OperationCore {
     void myCases(String operations){
-        int firstNum,secondNum;
+        float firstNum,secondNum;
         Tools actions=new Tools();
         Tools toReturnInt=new Tools();
-        //default -> System.out.println("something missing here");
-        /*default -> {
-                System.out.println("You can only enter the operator in the list.");
-                Tools getOperation = new Tools();
-                String operation = getOperation.whatOperation();
-                OperationCore coreObj = new OperationCore();
-                coreObj.myCases(operation);
-            }*/
         switch (operations) {
             case ("+"):
-                firstNum=toReturnInt.returnInt();
-                secondNum=toReturnInt.returnInt();
+                firstNum=toReturnInt.returnFloat();
+                secondNum=toReturnInt.returnFloat();
                 actions.add(firstNum, secondNum);
                 break;
             case ("*"):
-                firstNum=toReturnInt.returnInt();
-                secondNum=toReturnInt.returnInt();
+                firstNum=toReturnInt.returnFloat();
+                secondNum=toReturnInt.returnFloat();
                 actions.multiply(firstNum, secondNum);
                 break;
             case ("-"):
-                firstNum=toReturnInt.returnInt();
-                secondNum=toReturnInt.returnInt();
+                firstNum=toReturnInt.returnFloat();
+                secondNum=toReturnInt.returnFloat();
                 actions.subtract(firstNum, secondNum);
                 break;
             case ("%"):
-                firstNum=toReturnInt.returnInt();
-                secondNum=toReturnInt.returnInt();
+                firstNum=toReturnInt.returnFloat();
+                secondNum=toReturnInt.returnFloat();
                 actions.modulusDivision(firstNum, secondNum);
                 break;
             case ("/"):
-                firstNum=toReturnInt.returnInt();
-                secondNum=toReturnInt.returnInt();
+                firstNum=toReturnInt.returnFloat();
+                secondNum=toReturnInt.returnFloat();
                 actions.divide(firstNum, secondNum);
                 break;
             case ("="):
