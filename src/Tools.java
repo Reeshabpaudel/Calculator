@@ -31,11 +31,12 @@ public class Tools {
                          (-) for subtraction operation
                          (*) for multiplication operation
                          (/) for division
-                         (%) for modulus division.
+                         (%) for modulus division
+                         (=) for simple arithematic expression
                          :""");
         Scanner keyboardInput=new Scanner(System.in);
         String operation=keyboardInput.next();
-        if(operation.equals("+")||operation.equals("-")||operation.equals("*")||operation.equals("/")||operation.equals("%")) {
+        if(operation.equals("+")||operation.equals("-")||operation.equals("*")||operation.equals("/")||operation.equals("%")||operation.equals("=")) {
             return operation;
         } else{
             System.out.println("only the operators in the menu below are accepted :)");
