@@ -29,7 +29,9 @@ public class Calculator extends BaseCalculator {
                 result = Operation.add(list.get(idx-1), list.get(idx+1));
             }
         }
-
+        if(!list.contains("*") && !list.contains("+") && !list.contains("-") && !list.contains("/")){
+            System.out.println("valid operator couldn't be found.");
+        }
         list.set(idx-1, result);
         list.remove(idx+1);
         list.remove(idx);
